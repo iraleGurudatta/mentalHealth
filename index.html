@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mental Health Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" id="mood-section">
+    <h1>How are you feeling today?</h1>
+    <div class="mood-buttons">
+      <button onclick="submitMood('happy')">😊 Happy</button>
+      <button onclick="submitMood('neutral')">😐 Neutral</button>
+      <button onclick="submitMood('sad')">😢 Sad</button>
+      <button onclick="submitMood('anxious')">😰 Anxious</button>
+      <button onclick="submitMood('angry')">😠 Angry</button>
+      <button onclick="submitMood('depressed')">😞 Depressed</button>
+    </div>
+  </div>
+
+  <div class="container" id="chat-section">
+    <h2>Chat with your Mental Health Assistant</h2>
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Type your message..." />
+    <button class="send-btn" onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
